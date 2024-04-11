@@ -1,285 +1,732 @@
-<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="./css3.css">
+  <html lang="mr" href="./css3.css"></html> <!-- Use the language code 'mr' for Marathi -->
+
+
+  <html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+  
+      .custom-container {
+        background-color: hsl(0, 38%, 35%);
+        width: 94%;
+        height: auto; /* Adjusted height to be auto for responsive design */
+        padding: 10px; /* Adjusted padding for better spacing on small screens */
+        text-align: center;
+        color: #fff;
+      }
+  
+      .custom-container h1 {
+        font-size: 25px; /* Adjusted font size for better readability on small screens */
+        margin-bottom: 5px; /* Adjusted margin for better spacing on small screens */
+      }
+  
+      .custom-container p {
+        font-size: 12px; /* Adjusted font size for better readability on small screens */
+        margin: 0;
+      }
+  
+      @media only screen and (min-width: 600px) {
+        /* Apply these styles only when the screen width is 600 pixels or larger */
+        .custom-container {
+          padding: 20px;
+        }
+  
+        .custom-container h1 {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+  
+        .custom-container p {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  
+  <body>
+  
+    <div class="custom-container">
+      <h1>Guardians of History</h1>
+      <p>Exploring the Magnificent Forts of Maharashtra</p>
+    </div>
+  
+  </body>
+  
+
+  
+<body>
+  <script>
+    // JavaScript functions for slideshow navigation
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      const slides = document.querySelectorAll('.slide');
+      currentSlide = (index + slides.length) % slides.length;
+
+      slides.forEach((slide, i) => {
+        slide.style.display = i === currentSlide ? 'block' : 'none';
+      });
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+  </script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+<link rel="stylesheet" href="css.css">
+
+
+<div class="container">
+  <div class="text-right">
+
+      <br/><h4>Maharashtra's Fortress Legacy:</h4>
+      <h4>Exploring the Maratha Empire's Historic Strongholds </h4> 
+    
+  </div>
+  <div class="additional-text">
+    
+
+  </div>
+</div>
+
+<!-- Existing HTML... -->
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="aboutus.html">About</a>
+    <a href="#">Contact</a>
+  </div>
+
+<body>
+
+  <div class="slideshow-container">
+    
+      <!-- Big Text Overlay -->
+      <div class="slide-text"><b><p class="bordered-text">इतिहासाचे रक्षक</p>
+      </b></div>
+
+      <div class="slide fade">
+          <img src="p1.jpg" alt="Photo 1">
+      </div>
+      <div class="slide fade">
+        <img src="p2.jpg" alt="Photo 5">
+      </div>
+      <div class="slide fade">
+          <img src="p3.jpg" alt="Photo 2">
+      </div>
+      <div class="slide fade">
+          <img src="p4.jpg" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+          <img src="p5.jpg" alt="Photo 4">
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+      let currentIndex = 0;
+      const slides = document.querySelectorAll('.slide');
+
+      function showSlide(index) {
+          slides.forEach((slide, i) => {
+              slide.style.display = i === index ? 'block' : 'none';
+          });
+      }
+
+      function nextSlide() {
+          currentIndex = (currentIndex + 1) % slides.length;
+          showSlide(currentIndex);
+      }
+
+      setInterval(nextSlide, 2500); // Change slide every 5 seconds
+      showSlide(currentIndex); // Display the initial slide
+  </script>
+
+</body>
+
+
+<marquee><b>Maharashtra's Fortress Legacy:Exploring the Maratha Empire's Historic Strongholds  <b></marquee>
+
+<header><body>
+  <h1 class="custom-heading">List Of Forts In Maharashtra</h1>
+  <h5 class="custom-heading2">Some of the famous forts in Maharashtra include  
+    Raigad,
+    Rajgad,
+    Pratapgad,
+    Singhgad, 
+    Janjira,
+    Lohgad, 
+    Ramshej and Many More. </h5>
+
+</header>
+<body>
+
+		<ol  start="1">
+		<li>
+			<span>Raigad</span>
+		</li>
+		<li>
+			<span>Rajgad</span>
+		</li>
+		<li>
+			<span>Pratapgad</span>
+		</li>
+		<li>
+			<span>Singhgad</span>
+		</li>
+		<li>
+			<span>Janjira</span>
+		</li>
+		<li>
+			<span>Lohgad
+        </span>
+		</li>
+		<li>
+			<span>Ramshej </span>
+		</li>
+		<li>
+			<span>Shivneri</span>
+		</li>
+	
+	</ol>
+</div> 
+  <body>
+
+  
+  <!-- Gallery Images -->
+    <img class="gallery-img" src="shiv.png" alt="Photo 1" onclick="openModal('shiv.png')">
+    <img class="gallery-img" src="prat.png" alt="Photo 2" onclick="openModal('prat.png')">
+    <img class="gallery-img" src="ram.jpg" alt="Photo 3" onclick="openModal('ram.jpg')">
+    <img class="gallery-img" src="loh.jpg" alt="Photo 1" onclick="openModal('loh.jpg')">
+
+    <img class="gallery-img" src="raigad.png" alt="Photo 5" onclick="openModal('raigad.png')">
+
+  <img class="gallery-img" src="rajgad.png" alt="Photo 7" onclick="openModal('rajgad.png')">
+
+  <!-- Modal -->
+  <div id="myModal" class="modal" onclick="closeModal()">
+    <img id="modalImage" alt="Fullscreen Image">
+  </div>
+
+  <script>
+    function openModal(imageSrc) {
+      const modal = document.getElementById('myModal');
+      const modalImage = document.getElementById('modalImage');
+
+      modal.style.display = 'flex';
+      modalImage.src = imageSrc;
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('myModal');
+      modal.style.display = 'none';
+    }
+  </script>
+  </body>
+
+<style>
+body {
+font-family: 'Balbharati', Arial, sans-serif; 
+margin: 0;
+padding: 0;
+background-color: #f2f2f2; /* Set a background color for better visibility */
+text-align: center; /* Center text horizontally */
+}
+
+header {
+padding: 20px;
+background-color: hsl(0, 38%, 35%); /* Blue color for the header background */
+color: #fff; /* Text color */
+}
+body {
+font-family: 'Balbharati', Arial, sans-serif; /* Use Balbharati as the primary font */
+margin: 0;
+padding: 0;
+background-color: #f2f2f2; /* Set a background color for better visibility */
+text-align: center; /* Center text horizontally */
+}
+
+header h1 {
+font-size: 35px; /* Adjust the font size as needed */
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+.navbar {
+background-color: hsl(0, 38%, 35%); /* Blue color */
+padding: 10px; /* Add padding for better visual appearance */
+color: #fff; /* Text color */
+}
+
+</style>
+
+
+<header><body>
+  <h5 class="custom-heading">fORTS IN MAHARASHTRA</h5>
+  <h5 class="custom-heading2">Maharashtra's Fortress Legacy:Exploring the Maratha Empire's Historic Strongholds</h5>
+
+
+</header>
+
+ <marquee><b>Maharashtra's Fortress Legacy:Exploring the Maratha Empire's Historic Strongholds</h5>
+ </b></marquee>
+ <h3> 1 Shivneri Fort </h3></div>
+ 
+ <div class="responsive">
+  <div class="pics-gal">
+    <a target="_blank" href="shiv.png">
+      <img src="shiv.png" alt="Cinque Terre">
+    </a>
+    <p>One of the most popular trekking destinations near Pune, this fort is also rich with historical significance. This military fortification, built in the 17th century, is the birthplace of the founder of the Maratha Empire, Chhatrapati Shivaji Maharaj.</p>
+  
+   
+  </div>
+</div>
+<h3>2 Rajgad Fort </h3></div>
+<div class="responsive">
+  <div class="pics-gal">
+    <a target="_blank" href="rajgad.png">
+      <img src="rajgad.png" alt="Forest">
+    </a>
+    <p>Formerly known as Murudev, this hill fort is located in Pune District, and used to be the capital of the Maratha Empire for about 26 years under the reign of Chhatrapati Shivaji Maharaj.</div>
+
+</div>
+<h3>3 Raigad Fort </h3>
+<div class="responsive">
+  <div class="pics-gal">
+    <a target="_blank" href="raigad.png">
+      <img src="raigad.png" alt="Northern Lights">
+    </a>
+    <p>Situated in the Konkan region of Maharashtra, Raigad district is majorly known for its historical significance and awe-inspiring beauty. Earlier, the place was named as Coolaba but with the growing popularity of its Raigad fort, it was renamed to Raigad.  </div>
+ 
+</div>
+
+
+ 
+</div>
+<h3>4 Pratapgad Fort </h3></div>
+<div class="responsive">
+  <div class="pics-gal">
+    <a target="_blank" href="prat.png">
+      <img src="prat.png" alt="Mountains">
+    </a>
+    <p>Literally meaning ‘Fort of Valour’, this fort is significant due to the Battle of Pratapgad that happened here.</div>
+
+</div>
+
+</div>
+<h3>5 Singhgad Fort </h3></div>
+<div class="responsive">
+  <div class="pics-gal">
+    <a target="_blank" href="sinh.jpg">
+      <img src="sinh.jpg" alt="Mountains">
+    </a>
+    <p>Literally meaning ‘The Lion’s Fort’, Sinhagad Fort rises on top of a high, isolated cliff amidst the beautiful Bhuleswar Range of the Sahyadri Ranges.
+    </div>
+
+  </div>
+  <h3>6 Janjira Fort </h3></div>
+  <div class="responsive">
+    <div class="pics-gal">
+      <a target="_blank" href="janjira.png">
+        <img src="janjira.png" alt="Mountains">
+      </a>
+      <p>Located off the cost of the village of Murad, the Janjira Fort sits on an oval-shaped rock on an island in the Arabian Sea. One of the strongest marine forts in Maharashtra, this fort is accessible to the public by jetties. </div>
+      </div>
+    </div>
+    <h3>8 Lohgad Fort </h3></div>
+    <div class="responsive">
+      <div class="pics-gal">
+        <a target="_blank" href="loh.jpg">
+          <img src="loh.jpg" alt="Mountains">
+        </a>
+        <p>Lohagad is part of the Western Ghats. It rises to an elevation of 1,033 m (3,389 ft) above sea level, and is located to the southwest of the larger Visapur fort. The range divides the basins of the Indrayani river and Pavana lake.
+        </div>
+  
+      
+      </div>
+     <div class="containerf"></div>
+      <h3>7 Ramshej Fort </h3></div>
+      <div class="responsive">
+        <div class="pics-gal">
+          <a target="_blank" href="ramshej.jpg">
+            <img src="ramshej.jpg" alt="Mountains">
+          </a>
+          <p>Ramshej Fort is located north of Nashik city, and has been historically significant. History has it, that the fort was attacked by Mughals (Aurangzeb’s army), and his commanders threatened the Maratha kingdom saying that they would capture the fort in hours. 
+          </div></div>
+
+          <style>
+          .containerf {
+            background-color: #fff; /* Set a background color for the container */
+            padding: 20px; /* Add some padding inside the container */
+            border-radius: 5px; /* Create rounded corners for the container */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Create a subtle shadow effect */
+          }
+          </style>
+</body></body></html>
+<div class="clearfix"></div>
+
+<style>
+  .pics-gal {
+    border: 1px solid #ccc;
+  }
+
+  .pics-gal:hover {
+    border: 1px solid #777;
+  }
+
+  .pics-gal img {
+    width: 100%;
+    height: auto;
+  }
+
+  .desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .responsive {
+    padding: 0 2px;
+    float: left;
+    width:49.99999%;
+    margin: 1px 0; /* Added margin to create space between rows */
+  }
+
+  @media only screen and (min-width: 500px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 98%;
+      margin: 6px 0;
+    }
+  }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+</style>
+
+ 
+
+
+
+
+
+
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+
+    h1 {
+      color: hwb(0 96% 4%);
+      background-color: hsl(0, 38%, 35%); /* Set the desired background color */
+      padding: 1px; /* Optional: Add padding for better visual appearance */
+    }
+  </style>
+</head>
+
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+          /* Add your styles here */
+          body {
+              margin: 0;
+              padding: 0;
+              font-family: Arial, sans-serif;
+          }
+  
+          footer {
+              background-color: #333;
+              color: #fff;
+              padding: 20px;
+              text-align: center;
+          }
+  
+          .footer-links {
+              margin-top: 10px;
+          }
+  
+          .footer-links a {
+              color: #fff;
+              margin: 0 10px;
+              text-decoration: none;
+          }
+      </style>
+  </head>
+  <html>    
+
+</header>
+</body>
+
+
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forts of Maharashtra</title>
+
+
+    <style> 
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        .gallery-item {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+        }
+
+        img, video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .navigation-bar {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .navigation-bar button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+
+ </video>
+       
+     
+
+</header></html></body>
+
+    
+
+
+    <script>
+        let currentIndex = 0;
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        function showItem(index) {
+            galleryItems.forEach(item => item.style.display = 'none');
+            galleryItems[index].style.display = 'block';
+        }
+
+        function prevItem() {
+            currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+            showItem(currentIndex);
+        }
+
+        function nextItem() {
+            currentIndex = (currentIndex + 1) % galleryItems.length;
+            showItem(currentIndex);
+        }
+
+        // Show the initial item
+        showItem(currentIndex);
+    </script>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+ 
   <style>
-    /* Style for the big title */
-    .big-title {
+    body {
+      font-family: 'Balbharati', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
       text-align: center;
-      font-size: 30px;
-      margin-top: 10px;
-      background-color: #9B3922; /* Change the background color as desired */
-      color: #fff; /* Text color */
-      padding: 10px 20px; /* Add some padding for better appearance */
-    }
-    .big-title2 {
-      text-align: center;
-      font-size: 30px;
-      margin-top: 10px;
-      
-      
-      /* Change the background color as desired */
-      color: #ff4400; /* Text color */
-      padding: 10px 20px; /* Add some padding for better appearance */
-    }
-    /* Style for the information */
-    .info {
-      text-align: center;
-      margin-top: 10px;
-      font-size: 18px;
     }
 
-    /* Style for the slideshow container */
-    .slideshow-container {
-      max-width: 800px;
-      position: relative;
-      margin: auto;
-      margin-top: 50px;
+    footer {
+      background-color: hsl(0, 38%, 35%);
+      color: #fff;
+      padding: 9px;
+      width: 103%;
+      box-sizing: border-box;
+      min-height: 10px;
     }
 
-    /* Style for the slideshow images */
-    .slideshow-image {
-      display: none;
-      width: 100%;
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    /* Style for the big text overlay */
-    .text {
-      color: #fffefe;
-      font-size: 35px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      
-      padding: 20px;
+    .footer-left img {
+      width: 60px;
+      cursor: pointer;
+      margin-bottom: 10px; /* Add margin for better spacing on mobile */
+    }
+
+    .footer-center p {
+      margin-bottom: 5px; /* Adjusted margin for better spacing on mobile */
+    }
+
+    .footer-right {
+      text-align: center; /* Center align text for better mobile view */
+      font-size: 17px;
+    }
+
+    /* Media query for mobile view */
+    @media only screen and (max-width: 600px) {
+      .footer-content {
+        flex-direction: column; /* Change back to column for mobile view */
+      }
+
+      .footer-left img {
+        width: 40px;
+      }
+
+      .footer-right {
+        text-align: center;
+        margin-top: 1px;
+      }
     }
   </style>
 </head>
-<body>
 
-<!-- Big title -->
-<div class="big-title">
-  Forts of Maharashtra
-</div>
 
-<!-- Information -->
-<div class="info">
-  Explore the rich history and stunning architecture of Maharashtra's forts.
-</div>
 
-<hr>
-<marquee>Shivneri
-  Raigad
-  Rajgad 
-  Pratapgad
-  Singhgad 
-  Janjira
-  Lohgad 
-  Ramshej</marquee>
-  
-  <!-- Slideshow container -->
-<div class="slideshow-container">
-  <!-- Slideshow images -->
-  <img class="slideshow-image" src="p1.jpg" alt="Fort 1">
-  <img class="slideshow-image" src="p2.jpg" alt="Fort 2">
-  <img class="slideshow-image" src="p3.jpg" alt="Fort 3">
-  <img class="slideshow-image" src="p4.jpg" alt="Fort 4">
-  <img class="slideshow-image" src="p5.jpg" alt="Fort 5">
-  
- <hr>
 
-<script>
-  var slideIndex = 0;
-  carousel();
-
-  function carousel() {
-    var i;
-    var slides = document.getElementsByClassName("slideshow-image");
-    var text = document.querySelector(".text");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    slides[slideIndex-1].style.display = "block";  
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-  }
-</script>
-
-<style>
-    .container {
-      width: 300px; /* Adjust width as needed */
-      padding: 20px; /* Add padding for spacing */
-      background-color: #fff; /* Set background color */
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add shadow */
-    }
-  </style>
-  </head>
-  <body
-  <html>
-  <div class="container">
-    <p><h2>Maharashtra Forts</h2>Maharashtra is home to numerous forts, each with its own unique history and architectural features. These forts stand as witnesses to the rich heritage of the region, attracting tourists and history enthusiasts from around the world.</p>
-  </div>
-</div>
-<hr>
-<script>
-  // Function to toggle the visibility of the paragraph
-  function toggleParagraph() {
-    var paragraph = document.getElementById('forts-paragraph');
-    paragraph.classList.toggle('hidden');
-  }
-</script>
-
-<marquee>Shivneri
-  Raigad
-  Rajgad 
-  Pratapgad
-  Singhgad 
-  Janjira
-  Lohgad 
-  Ramshej</marquee>
+      <style>
+        body {
+          font-family: 'Balbharati', Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f2f2f2;
+          text-align: center;
+        }
+    
+        .principal {
+          display: flex;
+          flex-direction: column; /* Adjust to column for mobile view */
+          margin: 20px;
+          box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the container */
+          overflow: hidden;
+        }
+    
+        .left-side, .right-side {
+          padding: 1px;
+        }
+    
+        .right-side {
+          order: -1; /* Move the image to the top on mobile view */
+          align-items: center;
+        }
+    
+        .photo {
+          width: 100%;
+          height: auto; /* Maintain aspect ratio */
+          border-radius: 0;
+        }
+    
+        .principhoto {
+          width: 100%;
+          height: auto; /* Maintain aspect ratio */
+          border-radius: 0;
+          margin: auto;
+        }
+    
+        .caption22 {
+          text-align: right;
+          margin-top: 10px; /* Adjust margin for better spacing on mobile */
+        }
+    
+        h2 {
+          margin-bottom: 1px;
+        }
+    
+        h5 {
+          margin-top: 1px;
+        }
+    
+        /* Media query for mobile view */
+        @media only screen and (max-width: 600px) {
+          .principal {
+            flex-direction: column; /* Change back to column for mobile view */
+          }
+    
+          .right-side {
+            order: initial; /* Reset order for mobile view */
+          }
+    
+          .photo, .principhoto {
+            width: 80%;
+            height: auto; /* Maintain aspect ratio */
+            margin: auto;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      </html>
 </body>
 </html>
-<h4>Here are the best forts in Maharashtra:</h4>
-<h1>_______________________</h1>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>List Item</title>
-<style>
-  .list-item {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-  }
-  .list-item img {
-    width: 200px; /* Adjust as needed */
-    height: 200px; /* Adjust as needed */
-    margin-bottom: 10px;
-  }
-  .list-item-text {
-    flex: 1;
-  }
-</style>
-</head>
-
-<body>
-  <div class="big-title2">
-    <h3> 1 Shivneri Fort </h3></div>
-<div class="list-item">
-  <img src="shiv.png" alt="Photo">
-  <div class="list-item-text">
-    
-    <p>One of the most popular trekking destinations near Pune, this fort is also rich with historical significance. This military fortification, built in the 17th century, is the birthplace of the founder of the Maratha Empire, Chhatrapati Shivaji Maharaj.</p>
-  </div>
-</div>
-
-</style>
-</head>
-<body>
-  <div class="big-title2"><h3>2 Rajgad Fort </h3></div>
-
-<div class="list-item">
-  <img src="rajgad.png" alt="Photo">
-  <div class="list-item-text">
-    
-    <p>Formerly known as Murudev, this hill fort is located in Pune District, and used to be the capital of the Maratha Empire for about 26 years under the reign of Chhatrapati Shivaji Maharaj.</div>
-</div>
-
-<body>
-  <div class="big-title2"><h3>3 Raigad Fort </h3></div>
-
-<div class="list-item">
-  <img src="raigad.png" alt="Photo">
-  <div class="list-item-text">
-    
-    <p>Situated in the Konkan region of Maharashtra, Raigad district is majorly known for its historical significance and awe-inspiring beauty. Earlier, the place was named as Coolaba but with the growing popularity of its Raigad fort, it was renamed to Raigad.  </div>
-</div>
-
-<body>
-   <div class="big-title2"><h3>4 Pratapgad Fort </h3></div>
-<div class="list-item">
-  <img src="prat.png" alt="Photo">
-  <div class="list-item-text">
-    
-    <p>Literally meaning ‘Fort of Valour’, this fort is significant due to the Battle of Pratapgad that happened here.</div>
-
-</div>
-<body>
-  <div class="big-title2"> <h3>5 Singhgad Fort </h3></div>
-<div class="list-item">
-  <img src="sinh.jpg" alt="Photo">
-  <div class="list-item-text">
-    
-    <p>Literally meaning ‘The Lion’s Fort’, Sinhagad Fort rises on top of a high, isolated cliff amidst the beautiful Bhuleswar Range of the Sahyadri Ranges.
-</div>
-</div>
-
-<body>
-  <div class="big-title2"> <h3>6 Janjira Fort </h3></div>
-<div class="list-item">
-  <img src="janjira.png" alt="Photo">
-  <div class="list-item-text">
-    
-    <p>Located off the cost of the village of Murad, the Janjira Fort sits on an oval-shaped rock on an island in the Arabian Sea. One of the strongest marine forts in Maharashtra, this fort is accessible to the public by jetties. </div>
-</div>
-
-
-</div>
-<body>
-  <div class="big-title2"><h3>7 Ramshej Fort </h3></div>
-
-<div class="list-item">
-  <img src="ramshej.jpg" alt="Photo">
-  <div class="list-item-text">
-    
-    <p>Ramshej Fort is located north of Nashik city, and has been historically significant. History has it, that the fort was attacked by Mughals (Aurangzeb’s army), and his commanders threatened the Maratha kingdom saying that they would capture the fort in hours. 
-</div>
-
-
-</div>
-<body>
-   <div class="big-title2"> <h3>8 Lohgad Fort </h3></div>
-
-<div class="list-item">
-  <img src="loh.jpg" alt="Photo">
-  <div class="list-item-text">
-    
-    <p>Lohagad is part of the Western Ghats. It rises to an elevation of 1,033 m (3,389 ft) above sea level, and is located to the southwest of the larger Visapur fort. The range divides the basins of the Indrayani river and Pavana lake.
-    </div>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>List Item</title>
-<style>
-  .list-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-  }
-  .list-item img {
-    width: 300px; /* Adjust as needed */
-    height: 250px; /* Adjust as needed */
-    margin-bottom: 10px;
-  }
-  .list-item-text {
-    text-align: center;
-  }
-</style>
-</head>
-<body>
-
