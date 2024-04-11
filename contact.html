@@ -11,7 +11,7 @@
   <div class="navbar">
     <a href="index.html">Home</a>
     <a href="aboutus.html">About</a>
-    <a href="c">Contact</a>
+    <a href="contact.html">Contact</a>
 <body>
         
 <!DOCTYPE html>
@@ -50,11 +50,83 @@
             .custom-container5 p {
             color: rgb(0, 0, 0);
          }
+         <style>
+          body {
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 0;
+              background-color: #f2f2f2;
+              text-align: center;
+          }
+          h1,h3,h2,label {
+            color: rgb(0, 0, 0);
+        }
+  
+          .custom-container2 {
+              background-color: #fffefe;
+              border-radius: 8px;
+              box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+              padding: 20px;
+              margin: 20px auto;
+              max-width: 600px;
+          }
+  
+          label {
+              display: block;
+              margin-bottom: 5px;
+          }
+  
+          input[type="text"],
+          textarea {
+              width: 100%;
+              padding: 8px;
+              margin-bottom: 10px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+          }
+  
+          input[type="submit"] {
+              background-color: #4CAF50;
+              color: white;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+          }
+  
+          input[type="submit"]:hover {
+              background-color: #45a049;
+          }
 
        
     </style>
     <div class="custom-container5">
         <h2>Contact Us:</h2>
-        <p>Our "Contact Us" page is more than just a formality; it's an open invitation for you to reach out, share your thoughts, and connect with us directly. Whether you have questions, feedback, or just want to say hello, this page is designed to make it easy for you to get in touch.</p>
-    </div>
+        <h2>Phone Number:97663 46920</h2>
+        <h2>Mail: akankshajagtap500@gmail.com</h2>
+       </div>
+    <div class="custom-container2">
+
+  
+      <h2>Contact Us</h2>
+      <form action="index.html" method="GET">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="email">Your Email:</label>
+          <input type="text" id="email" name="email" required>
+  
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+  
+          <input type="submit" value="Submit">
+           </form>
+  </div>
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      alert("Form submitted successfully!");
+        window.location.href = "index.html"; // Redirect to index.html after form submission
+    
+    });
 </head></html></head>
